@@ -38,12 +38,23 @@
             These creatures, born from the darkest corners of the universe, are drawn to the abyss's infinite 
             darkness, seeking to claim its ancient powers.
         </p>
+        <% demon_toys = ["Pitchfork", "Flamethrower", "Crossbow", "Mace"] %>
+        
         <p>
             The air thickens with a palpable sense of dread and anticipation as these monstrous beings, 
             each more terrifying than the last, step over the threshold between worlds. With eyes glowing 
             and fangs bared, they march into the abyss, ready to confront whatever mysteries and challenges 
             lie within.
         </p>
+        <p> 
+        There are <%= demon_toys.count %> demon toys you can pick up when you enter the abyss with us. Choose wisely. 
+        </p>
+        <ul>
+        <%j for toy in demon_toys%>
+        <li> <%= toy %> </li>
+        <% end %>
+        </ul>
+        
     </div>
 </body>
 </html>
